@@ -24,7 +24,7 @@ class _DetailPageState extends State<DetailPage> {
 
     //function to get weather
     Map getForecastWeather(int index) {
-      int maxWindSpeed = weatherData[index]["day"]["maxwind_kph"].toInt();
+      int maxWindSpeed = weatherData[index]["day"]["maxwind_kph"]?.toInt();
       int avgHumidity = weatherData[index]["day"]["avghumidity"].toInt();
       int chanceOfRain =
           weatherData[index]["day"]["daily_chance_of_rain"].toInt();
